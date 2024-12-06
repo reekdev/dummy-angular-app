@@ -72,10 +72,12 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-docker-nginx:build:production"
+              "buildTarget": "angular-docker-nginx:build:production",
+              "port": 3600
             },
             "development": {
-              "buildTarget": "angular-docker-nginx:build:development"
+              "buildTarget": "angular-docker-nginx:build:development",
+              "port": 3600
             }
           },
           "defaultConfiguration": "development"
